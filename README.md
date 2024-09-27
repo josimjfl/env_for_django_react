@@ -113,5 +113,19 @@ Be sure to handle environment variables securely in both parts of the project.
 
 ---
 
-You can save this as `env_setup_guide.md`.
 
+IF Error, Please update this
+##### Below solution for Uncaught ReferenceError: process is not defined:
+
+    if you are using CRA (create react app), use '''process.env.'''
+    if you are using ViteJS, use '''import.meta.env.'''
+
+Read more here about how to import env process in Vite: https://vitejs.dev/guide/env-and-mode.html
+
+Examples:
+
+CRA: ```process.env.API_BASE_URL```
+
+Vite: ```import.meta.env.VITE_API_BASE_URL```
+
+Please Follow jflitlab
